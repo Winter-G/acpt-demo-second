@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db0dfe92-3c7b-4bec-86cb-1b733b066644" name="Changes" comment="print queue method added" />
+    <list default="true" id="db0dfe92-3c7b-4bec-86cb-1b733b066644" name="Changes" comment="print queue method updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Winter-G"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Winter-G/acpt-demo-second.git",
+    "accountId": "44a93e86-133c-4cc0-b16e-68303113420f"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -105,7 +117,7 @@
       <workItem from="1733391172558" duration="15000" />
       <workItem from="1733630325046" duration="17391000" />
       <workItem from="1734156703672" duration="7618000" />
-      <workItem from="1734239384582" duration="15605000" />
+      <workItem from="1734239384582" duration="16368000" />
     </task>
     <task id="LOCAL-00001" summary="print queue method added">
       <option name="closed" value="true" />
@@ -115,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734262652824</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="print queue method updated">
+      <option name="closed" value="true" />
+      <created>1734262802859</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734262802859</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="print queue method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="print queue method added" />
+    <MESSAGE value="print queue method updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="print queue method updated" />
   </component>
 </project>
