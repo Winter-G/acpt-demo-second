@@ -38,14 +38,14 @@ public class SaveFormController {
     @FXML
     public void save(ActionEvent event) throws SQLException, ClassNotFoundException {
 
-        int id = Integer.parseInt(txtId.getText());
+//        int id = Integer.parseInt(txtId.getText());
         String brand = txtBrand.getText();
         String model = txtModel.getText();
         int qty = Integer.parseInt(txtQty.getText());
         double price = Double.valueOf(txtPrice.getText());
 
 
-        boolean b = VehicleModel.saveVehicle(new VehicleDto(id, brand, model, qty, price));
+        boolean b = VehicleModel.saveVehicle(new VehicleDto(0, brand, model, qty, price));
 
 
 

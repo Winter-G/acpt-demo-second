@@ -1,0 +1,19 @@
+Index: src/main/java/com/example/second/db/DBConnection.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.second.db;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.SQLException;\r\n\r\npublic class DBConnection {\r\n\r\n    private static DBConnection dbConnection; //reference variable\r\n\r\n    private final Connection connection;\r\n\r\n\r\n    private DBConnection() throws SQLException, ClassNotFoundException {\r\n        //load Driver class to ram\r\n        Class.forName(\"com.mysql.cj.jdbc.Driver\");\r\n\r\n        // Establish the database connection\r\n        connection = DriverManager.getConnection(\"jdbc:mysql://localhost:3308/vehicle\", \"root\", \"gnwg2001\");\r\n    }\r\n\r\n    public static DBConnection getDBConnection() throws SQLException, ClassNotFoundException {\r\n        if (dbConnection == null) {\r\n            dbConnection = new DBConnection();\r\n        }\r\n        return dbConnection;\r\n    }\r\n\r\n    public Connection getConnection() {\r\n        return connection;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/second/db/DBConnection.java b/src/main/java/com/example/second/db/DBConnection.java
+--- a/src/main/java/com/example/second/db/DBConnection.java	(revision b0546efa2d8aac7a5c77a1c66263b0e588164d0a)
++++ b/src/main/java/com/example/second/db/DBConnection.java	(date 1734596405531)
+@@ -16,7 +16,7 @@
+         Class.forName("com.mysql.cj.jdbc.Driver");
+ 
+         // Establish the database connection
+-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3308/vehicle", "root", "gnwg2001");
++        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vehicle", "root", "gnwg2001");
+     }
+ 
+     public static DBConnection getDBConnection() throws SQLException, ClassNotFoundException {

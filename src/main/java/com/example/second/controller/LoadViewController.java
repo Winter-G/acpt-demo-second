@@ -25,7 +25,7 @@ public class LoadViewController implements Initializable {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3308/vehicle", "root", "gnwg2001");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vehicle", "root", "gnwg2001");
 
             PreparedStatement preparedStatement = connection.prepareStatement("select * from car");
 

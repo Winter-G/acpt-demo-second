@@ -40,3 +40,29 @@ drop table order_details;
 drop table orders;
 
 drop table car;
+
+
+
+
+
+INSERT INTO car (brand, model, qty, price) VALUES
+('Toyota', 'Corolla', 5, 600000.00),
+('Honda', 'Civic', 6, 30000.50),
+('Tesla', 'Model 5', 6, 40000.00),
+('Ford', 'Mustang', 8, 65000.50),
+('BMW', 'X5', 10, 800000.00),
+('Audi', 'R8', 4, 140000.00),
+('Nissan', 'Altima', 12, 23000.00);
+
+
+
+
+
+
+
+
+<-new entry->
+
+INSERT INTO car (brand, model, qty, price)
+VALUES ('Chevrolet', 'Malibu', 8, 22000.00);
+

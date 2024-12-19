@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         // Load the FXML file for the UI
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("update-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("load-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Hello JavaFX");
