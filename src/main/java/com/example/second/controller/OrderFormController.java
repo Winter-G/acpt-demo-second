@@ -128,6 +128,28 @@ public class OrderFormController implements Initializable {
             boolean orderPlaced = OrderModel.placeOrder(new OrderDto(formattedDate, subTotal, orderDetailDtos));
             if (orderPlaced) {
                 System.out.println("Order Placed");
+
+                // Generate and display the bill
+                System.out.println("\n************* BILL *************");
+                System.out.println("Date & Time: " + formattedDate);
+                System.out.println("Order Details:");
+                System.out.printf("%-10s %-10s %-10s %-12s %-10s\n", "Brand", "Model", "Qty", "Unit Price", "Total"); // Format and align output
+
+                // Iterate through each item in the itemTMS list to process its details
+                for (ItemTM item : itemTMS) {
+                    // Process the current item
+                    System.out.printf("%-10s %-10s %-10d %-12.2f %-10.2f\n",
+                            item.getBrand(),
+                            item.getModel(),
+                            item.getQty(),
+                            item.getUnitPrice(),
+                            item.getTotal());
+                }
+
+                System.out.println("---------------------------------");
+                System.out.printf("Sub-Total: %.2f\n", subTotal);
+                System.out.println("*********************************");
+
             } else {
                 System.out.println("Order Not Placed");
             }
